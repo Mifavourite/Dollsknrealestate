@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Doll SKN Real Estate Agency — St. Kitts & Nevis property experts. Buy, sell, and rent with licensed agent Adolceen Letisha Woodley.">
+  <title>Doll SKN Real Estate | St. Kitts & Nevis Property Experts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">Licensed Real Estate Agent · St. Kitts</div>
+        <h1>Find Your <em>Island</em> Dream Home</h1>
+        <p class="lead">Discover exceptional properties across St. Kitts & Nevis with Doll SKN Real Estate — where Caribbean elegance meets expert guidance.</p>
+        <div class="hero-actions">
+          <a href="buy.html" class="btn btn-primary">Browse Properties</a>
+          <a href="contact.html" class="btn btn-secondary">Schedule a Consultation</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80" alt="Luxury Caribbean home with ocean view">
+        <div class="hero-image-accent">SKN</div>
+      </div>
+    </section>
+
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="fade-in">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Properties Sold</div>
+        </div>
+        <div class="fade-in">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div class="fade-in">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="fade-in">
+          <div class="stat-number">SKN</div>
+          <div class="stat-label">Island Expertise</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="eyebrow">Featured Listings</span>
+          <h2>Exceptional Properties Await</h2>
+          <p class="lead">Handpicked homes and investments across the Federation's most sought-after locations.</p>
+        </div>
+        <div class="property-grid" id="featured-properties"></div>
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="buy.html" class="btn btn-gold">View All Listings</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--blush);">
+      <div class="container about-preview">
+        <div class="about-image fade-in">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=80" alt="Adolceen Letisha Woodley, Real Estate Agent">
+          <div class="about-image-frame"></div>
+        </div>
+        <div class="about-content fade-in">
+          <span class="eyebrow">Meet Your Agent</span>
+          <h2>Adolceen Letisha Woodley</h2>
+          <p>As the founder and licensed owner of Doll SKN Real Estate Agency, Adolceen brings passion, integrity, and deep local knowledge to every transaction. Based on Main Street in Half Way Tree, she has built a reputation as one of St. Kitts's most trusted real estate professionals.</p>
+          <p>Whether you're a first-time buyer, seasoned investor, or looking to sell your property, Adolceen provides personalized service tailored to your unique goals.</p>
+          <a href="about.html" class="btn btn-primary" style="margin-top: 1rem;">Learn More About Adolceen</a>
+          <div class="signature">Adolceen L. Woodley</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="eyebrow">What We Offer</span>
+          <h2>Comprehensive Real Estate Services</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card fade-in">
+            <div class="service-icon">🏡</div>
+            <h3>Buy a Home</h3>
+            <p>Find your perfect property with expert guidance through every step of the purchase process.</p>
+          </div>
+          <div class="service-card fade-in">
+            <div class="service-icon">🔑</div>
+            <h3>Rent Property</h3>
+            <p>Discover quality rental homes and apartments across St. Kitts & Nevis.</p>
+          </div>
+          <div class="service-card fade-in">
+            <div class="service-icon">✨</div>
+            <h3>Sell Your Home</h3>
+            <p>Maximize your property's value with strategic marketing and skilled negotiation.</p>
+          </div>
+          <div class="service-card fade-in">
+            <div class="service-icon">🏝</div>
+            <h3>Island Advisory</h3>
+            <p>Navigate neighborhoods, investment opportunities, and the local market with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container fade-in">
+        <h2>Ready to Begin Your Property Journey?</h2>
+        <p>Let Adolceen guide you to your next chapter in paradise. Schedule a free consultation today.</p>
+        <a href="contact.html" class="btn btn-gold">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script type="module">
+    import { PROPERTIES, renderPropertyCard } from './js/main.js';
+    document.getElementById('featured-properties').innerHTML =
+      PROPERTIES.filter(p => p.type === 'sale').slice(0, 3).map(renderPropertyCard).join('');
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
