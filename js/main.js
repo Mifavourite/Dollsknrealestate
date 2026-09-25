@@ -127,7 +127,6 @@ function renderFooter() {
             </div>
             <p>Your trusted partner for buying, selling, and renting property across St. Kitts & Nevis. Led by licensed agent ${SITE.agent}.</p>
           </div>
-          ...
           <div class="footer-col">
             <h4>Explore</h4>
             <ul>
