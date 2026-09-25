@@ -126,58 +126,65 @@ function renderHeader() {
 function renderFooter() {
   return `
     <footer class="site-footer">
-      <div class="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
-  <!-- ===== FOOTER LOGO — MADE VISIBLE ON DARK BG ===== -->
-  <img
-    src="images/doll_skn_purple_logo.png"
-    alt="Doll SKN Real Estate"
-    style="
-      height: 64px;
-      width: auto;
-      max-width: none;
-      object-fit: contain;
-      display: block;
-      flex-shrink: 0;
-      filter: brightness(0) invert(1);
-    "
-  >
-  <div style="display: flex; flex-direction: column; line-height: 1.15;">
-    <span class="logo-main" style="font-size: 1.15rem; font-weight: 700; color: #fff;">${SITE.name}</span>
-    <span class="logo-sub" style="font-size: 0.75rem; color: rgba(255,255,255,0.75);">${SITE.tagline}</span>
-  </div>
-</div>
-            <p>Your trusted partner for buying, selling, and renting property across St. Kitts & Nevis. Led by licensed agent ${SITE.agent}.</p>
+      <div class="container">
+        <div class="footer-grid" style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; align-items: start; padding: 3.5rem 0 2.5rem;">
+          
+          <!-- Brand column -->
+          <div class="footer-brand">
+            <div class="logo" style="display: flex; align-items: center; gap: 14px; margin-bottom: 1.25rem;">
+              <img
+                src="images/doll_skn_purple_logo.png"
+                alt="Doll SKN Real Estate"
+                style="height: 56px; width: auto; object-fit: contain; display: block; flex-shrink: 0; filter: brightness(0) invert(1);"
+              >
+              <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                <span style="font-size: 1.2rem; font-weight: 700; color: #fff; letter-spacing: 0.02em;">${SITE.name}</span>
+                <span style="font-size: 0.7rem; color: rgba(255,255,255,0.65); text-transform: uppercase; letter-spacing: 0.12em;">${SITE.tagline}</span>
+              </div>
+            </div>
+            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.65; max-width: 280px; margin: 0;">
+              Your trusted partner for buying, selling, and renting property across St. Kitts &amp; Nevis. Led by licensed agent ${SITE.agent}.
+            </p>
           </div>
+
+          <!-- Explore -->
           <div class="footer-col">
-            <h4>Explore</h4>
-            <ul>
-              <li><a href="buy.html">Properties for Sale</a></li>
-              <li><a href="rent.html">Rentals</a></li>
-              <li><a href="neighborhoods.html">Neighborhoods</a></li>
-              <li><a href="services.html">List Your Property</a></li>
+            <h4 style="color: #c9a84c; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 1.25rem; font-weight: 600;">Explore</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 0.65rem;"><a href="buy.html" style="color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem;">Properties for Sale</a></li>
+              <li style="margin-bottom: 0.65rem;"><a href="rent.html" style="color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem;">Rentals</a></li>
+              <li style="margin-bottom: 0.65rem;"><a href="neighborhoods.html" style="color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem;">Neighborhoods</a></li>
+              <li style="margin-bottom: 0.65rem;"><a href="services.html" style="color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem;">List Your Property</a></li>
             </ul>
           </div>
+
+          <!-- Company -->
           <div class="footer-col">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="about.html">About Adolceen</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="testimonials.html">Client Reviews</a></li>
-              <li><a href="license.html">License & Credentials</a></li>
+            <h4 style="color: #c9a84c; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 1.25rem; font-weight: 600;">Company</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 0.65rem;"><a href="about.html" style="color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem;">About Adolceen</a></li>
+              <li style="margin-bottom: 0.65rem;"><a href="services.html" style="color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem;">Services</a></li>
+              <li style="margin-bottom: 0.65rem;"><a href="testimonials.html" style="color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem;">Client Reviews</a></li>
+              <li style="margin-bottom: 0.65rem;"><a href="license.html" style="color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem;">License &amp; Credentials</a></li>
             </ul>
           </div>
+
+          <!-- Contact -->
           <div class="footer-col footer-contact">
-            <h4>Contact</h4>
-            <ul>
-              <li>📍 ${SITE.address}</li>
-              <li>📞 ${SITE.phone}</li>
-              <li>✉️ ${SITE.email}</li>
+            <h4 style="color: #c9a84c; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 1.25rem; font-weight: 600;">Contact</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 0.75rem; color: rgba(255,255,255,0.75); font-size: 0.9rem; line-height: 1.5;">📍 ${SITE.address}</li>
+              <li style="margin-bottom: 0.75rem; color: rgba(255,255,255,0.75); font-size: 0.9rem;">📞 ${SITE.phone}</li>
+              <li style="margin-bottom: 0.75rem; color: rgba(255,255,255,0.75); font-size: 0.9rem;">✉️ ${SITE.email}</li>
             </ul>
           </div>
+
         </div>
-        <div class="footer-bottom">
-          <span>&copy; ${new Date().getFullYear()} Doll SKN Real Estate Agency. All rights reserved.</span>
-          <span class="license-badge">✦ Licensed Agent · ${SITE.license}</span>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+          <span style="color: rgba(255,255,255,0.5); font-size: 0.8rem;">&copy; ${new Date().getFullYear()} Doll SKN Real Estate Agency. All rights reserved.</span>
+          <span class="license-badge" style="color: rgba(255,255,255,0.7); font-size: 0.8rem; background: rgba(255,255,255,0.08); padding: 0.4rem 0.9rem; border-radius: 999px;">✦ Licensed Agent · ${SITE.license}</span>
         </div>
       </div>
     </footer>
