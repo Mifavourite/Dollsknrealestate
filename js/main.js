@@ -98,25 +98,21 @@ function renderHeader() {
   ).join('');
 
    return `
-    <header class="site-header" id="site-header">
-      <div class="container header-inner">
-        <a href="index.html" class="logo">
-          <!-- ===== LOGO ADDED HERE (HEADER) ===== -->
-          <img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 48px; width: auto; display: block;">
-          <!-- Optional: keep text as fallback / accessibility
-          <span class="logo-main">${SITE.name}</span>
-          <span class="logo-sub">${SITE.tagline}</span>
-          -->
-        </a>
-        <nav class="nav-desktop">${navItems}</nav>
-        <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </header>
-    <nav class="nav-mobile" id="nav-mobile">${mobileItems}</nav>
-  `;
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <!-- ===== LOGO — BIGGER SIZE ===== -->
+        <img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 90px; width: auto; display: block;">
+      </a>
+      <nav class="nav-desktop">${navItems}</nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="nav-mobile" id="nav-mobile">${mobileItems}</nav>
+`;
 }
 
 function renderFooter() {
@@ -126,15 +122,12 @@ function renderFooter() {
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="logo">
-              <!-- ===== LOGO ADDED HERE (FOOTER) ===== -->
-              <img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 40px; width: auto; margin-bottom: 0.75rem;">
-              <!-- Optional text fallback
-              <span class="logo-main">${SITE.name}</span>
-              <span class="logo-sub">${SITE.tagline}</span>
-              -->
+              <!-- ===== LOGO — BIGGER SIZE ===== -->
+              <img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 70px; width: auto; margin-bottom: 0.75rem; display: block;">
             </div>
             <p>Your trusted partner for buying, selling, and renting property across St. Kitts & Nevis. Led by licensed agent ${SITE.agent}.</p>
           </div>
+          ...
           <div class="footer-col">
             <h4>Explore</h4>
             <ul>
