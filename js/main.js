@@ -3,7 +3,7 @@
 const SITE = {
   name: 'Doll SKN',
   tagline: 'Real Estate Agency',
-  agent: 'Adolceen Letisha Woodley',
+  agent: 'Adolceen Woodley',
   address: 'Main Street, Half Way Tree, St. Kitts',
   phone: '+1 (869) 555-0198',
   email: 'hello@dollskn.com',
