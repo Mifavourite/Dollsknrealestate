@@ -57,17 +57,6 @@ const PROPERTIES = [
     image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80'
   },
   {
-    id: 4,
-    title: 'Garden Cottage — Cayon',
-    location: 'Cayon, St. Kitts',
-    price: 285000,
-    type: 'sale',
-    beds: 2,
-    baths: 2,
-    sqft: 1400,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80'
-  },
-  {
     id: 5,
     title: 'Beachfront Condo — Frigate Bay',
     location: 'Frigate Bay, St. Kitts',
