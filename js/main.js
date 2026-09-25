@@ -97,22 +97,30 @@ function renderHeader() {
     `<a href="${link.href}">${link.label}</a>`
   ).join('');
 
-   return `
-  <header class="site-header" id="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <!-- ===== LOGO — BIGGER SIZE ===== -->
-        <img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 90px; width: auto; display: block;">
-      </a>
-      <nav class="nav-desktop">${navItems}</nav>
-      <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-  <nav class="nav-mobile" id="nav-mobile">${mobileItems}</nav>
-`;
+  return `
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+          <!-- ===== LOGO — BIGGER, NO STRETCH + TEXT BESIDE ===== -->
+          <img
+            src="images/doll_skn_purple_logo.png"
+            alt="Doll SKN Real Estate"
+            style="height: 72px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0;"
+          >
+          <div style="display: flex; flex-direction: column; line-height: 1.15;">
+            <span class="logo-main" style="font-size: 1.25rem; font-weight: 700;">${SITE.name}</span>
+            <span class="logo-sub" style="font-size: 0.75rem; opacity: 0.8;">${SITE.tagline}</span>
+          </div>
+        </a>
+        <nav class="nav-desktop">${navItems}</nav>
+        <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="nav-mobile" id="nav-mobile">${mobileItems}</nav>
+  `;
 }
 
 function renderFooter() {
@@ -121,9 +129,17 @@ function renderFooter() {
       <div class="container">
         <div class="footer-grid">
           <div class="footer-brand">
-            <div class="logo">
-              <!-- ===== LOGO — BIGGER SIZE ===== -->
-              <img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 70px; width: auto; margin-bottom: 0.75rem; display: block;">
+            <div class="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+              <!-- ===== LOGO — BIGGER, NO STRETCH + TEXT BESIDE ===== -->
+              <img
+                src="images/doll_skn_purple_logo.png"
+                alt="Doll SKN Real Estate"
+                style="height: 64px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0;"
+              >
+              <div style="display: flex; flex-direction: column; line-height: 1.15;">
+                <span class="logo-main" style="font-size: 1.15rem; font-weight: 700;">${SITE.name}</span>
+                <span class="logo-sub" style="font-size: 0.75rem; opacity: 0.75;">${SITE.tagline}</span>
+              </div>
             </div>
             <p>Your trusted partner for buying, selling, and renting property across St. Kitts & Nevis. Led by licensed agent ${SITE.agent}.</p>
           </div>
