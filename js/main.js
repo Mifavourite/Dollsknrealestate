@@ -97,12 +97,16 @@ function renderHeader() {
     `<a href="${link.href}">${link.label}</a>`
   ).join('');
 
-  return `
+   return `
     <header class="site-header" id="site-header">
       <div class="container header-inner">
         <a href="index.html" class="logo">
+          <!-- ===== LOGO ADDED HERE (HEADER) ===== -->
+          <img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 48px; width: auto; display: block;">
+          <!-- Optional: keep text as fallback / accessibility
           <span class="logo-main">${SITE.name}</span>
           <span class="logo-sub">${SITE.tagline}</span>
+          -->
         </a>
         <nav class="nav-desktop">${navItems}</nav>
         <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
@@ -122,8 +126,12 @@ function renderFooter() {
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="logo">
+              <!-- ===== LOGO ADDED HERE (FOOTER) ===== -->
+              **<img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 40px; width: auto; margin-bottom: 0.75rem;">**
+              <!-- Optional text fallback
               <span class="logo-main">${SITE.name}</span>
               <span class="logo-sub">${SITE.tagline}</span>
+              -->
             </div>
             <p>Your trusted partner for buying, selling, and renting property across St. Kitts & Nevis. Led by licensed agent ${SITE.agent}.</p>
           </div>
