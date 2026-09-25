@@ -127,7 +127,7 @@ function renderFooter() {
           <div class="footer-brand">
             <div class="logo">
               <!-- ===== LOGO ADDED HERE (FOOTER) ===== -->
-              **<img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 40px; width: auto; margin-bottom: 0.75rem;">**
+              <img src="images/doll_skn_purple_logo.png" alt="Doll SKN Real Estate" class="logo-img" style="height: 40px; width: auto; margin-bottom: 0.75rem;">
               <!-- Optional text fallback
               <span class="logo-main">${SITE.name}</span>
               <span class="logo-sub">${SITE.tagline}</span>
