@@ -89,28 +89,6 @@ const PROPERTIES = [
     sqft: 750,
     image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80'
   },
-  {
-    id: 7,
-    title: 'Family Home — Half Way Tree',
-    location: 'Half Way Tree, St. Kitts',
-    price: 2800,
-    type: 'rent',
-    beds: 3,
-    baths: 2,
-    sqft: 1800,
-    image: 'https://images.unsplash.com/photo-1605276374101-deef2420d723?w=800&q=80'
-  },
-  {
-    id: 8,
-    title: 'Nevis Hillside Retreat',
-    location: 'Charlestown, Nevis',
-    price: 520000,
-    type: 'sale',
-    beds: 3,
-    baths: 2,
-    sqft: 2400,
-    image: 'https://images.unsplash.com/photo-1600047509807-ba8f84d4fc51?w=800&q=80'
-  }
 ];
 
 function formatPrice(price, type) {
