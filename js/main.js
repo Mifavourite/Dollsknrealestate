@@ -126,21 +126,26 @@ function renderHeader() {
 function renderFooter() {
   return `
     <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <div class="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
-              <!-- ===== LOGO — BIGGER, NO STRETCH + TEXT BESIDE ===== -->
-              <img
-                src="images/doll_skn_purple_logo.png"
-                alt="Doll SKN Real Estate"
-                style="height: 64px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0;"
-              >
-              <div style="display: flex; flex-direction: column; line-height: 1.15;">
-                <span class="logo-main" style="font-size: 1.15rem; font-weight: 700;">${SITE.name}</span>
-                <span class="logo-sub" style="font-size: 0.75rem; opacity: 0.75;">${SITE.tagline}</span>
-              </div>
-            </div>
+      <div class="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+  <!-- ===== FOOTER LOGO — MADE VISIBLE ON DARK BG ===== -->
+  <img
+    src="images/doll_skn_purple_logo.png"
+    alt="Doll SKN Real Estate"
+    style="
+      height: 64px;
+      width: auto;
+      max-width: none;
+      object-fit: contain;
+      display: block;
+      flex-shrink: 0;
+      filter: brightness(0) invert(1);
+    "
+  >
+  <div style="display: flex; flex-direction: column; line-height: 1.15;">
+    <span class="logo-main" style="font-size: 1.15rem; font-weight: 700; color: #fff;">${SITE.name}</span>
+    <span class="logo-sub" style="font-size: 0.75rem; color: rgba(255,255,255,0.75);">${SITE.tagline}</span>
+  </div>
+</div>
             <p>Your trusted partner for buying, selling, and renting property across St. Kitts & Nevis. Led by licensed agent ${SITE.agent}.</p>
           </div>
           <div class="footer-col">
