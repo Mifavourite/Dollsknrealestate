@@ -1093,3 +1093,103 @@ section { padding: 5rem 0; }
   .footer-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr; }
 }
+/* ===== HEADER — MOBILE FIX ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 72px;
+  padding: 8px 16px;
+  overflow: visible;
+}
+
+/* Logo — large on desktop, still clear on mobile */
+.logo {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 1;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 110px !important;
+  width: auto !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  flex-shrink: 0;
+}
+
+/* Always show the menu button on the right */
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #1a3c34; /* your teal/charcoal */
+  border-radius: 2px;
+}
+
+/* Hide desktop nav CTA on small screens if needed */
+@media (max-width: 900px) {
+  .nav-desktop,
+  .nav-cta {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: flex !important; /* always visible on mobile */
+  }
+
+  /* Slightly smaller logo on phone so button fits */
+  .logo img {
+    height: 64px !important;
+  }
+
+  /* Hide tagline text on very small screens to free space */
+  .logo .logo-sub {
+    display: none;
+  }
+
+  .logo .logo-main {
+    font-size: 1rem !important;
+  }
+
+  .header-inner {
+    min-height: 72px;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 400px) {
+  .logo img {
+    height: 56px !important;
+  }
+
+  .logo .logo-main {
+    display: none; /* logo image only — maximum space for menu button */
+  }
+}
