@@ -100,18 +100,18 @@ function renderHeader() {
   return `
     <header class="site-header" id="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-          <!-- ===== LOGO — BIGGER, NO STRETCH + TEXT BESIDE ===== -->
-          <img
-            src="images/doll_skn_purple_logo.png"
-            alt="Doll SKN Real Estate"
-            style="height: 72px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0;"
-          >
-          <div style="display: flex; flex-direction: column; line-height: 1.15;">
-            <span class="logo-main" style="font-size: 1.25rem; font-weight: 700;">${SITE.name}</span>
-            <span class="logo-sub" style="font-size: 0.75rem; opacity: 0.8;">${SITE.tagline}</span>
-          </div>
-        </a>
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 14px; text-decoration: none;">
+  <!-- ===== LOGO — LARGE & VISIBLE ===== -->
+  <img
+    src="images/doll_skn_purple_logo.png"
+    alt="Doll SKN Real Estate"
+    style="height: 110px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0;"
+  >
+  <div style="display: flex; flex-direction: column; line-height: 1.15;">
+    <span class="logo-main" style="font-size: 1.35rem; font-weight: 700;">${SITE.name}</span>
+    <span class="logo-sub" style="font-size: 0.8rem; opacity: 0.8;">${SITE.tagline}</span>
+  </div>
+</a>
         <nav class="nav-desktop">${navItems}</nav>
         <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
         <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
@@ -132,16 +132,17 @@ function renderFooter() {
           <!-- Brand column -->
           <div class="footer-brand">
             <div class="logo" style="display: flex; align-items: center; gap: 14px; margin-bottom: 1.25rem;">
-              <img
-                src="images/doll_skn_purple_logo.png"
-                alt="Doll SKN Real Estate"
-                style="height: 56px; width: auto; object-fit: contain; display: block; flex-shrink: 0; filter: brightness(0) invert(1);"
-              >
-              <div style="display: flex; flex-direction: column; line-height: 1.2;">
-                <span style="font-size: 1.2rem; font-weight: 700; color: #fff; letter-spacing: 0.02em;">${SITE.name}</span>
-                <span style="font-size: 0.7rem; color: rgba(255,255,255,0.65); text-transform: uppercase; letter-spacing: 0.12em;">${SITE.tagline}</span>
-              </div>
-            </div>
+  <!-- ===== LOGO — LARGE & VISIBLE ===== -->
+  <img
+    src="images/doll_skn_purple_logo.png"
+    alt="Doll SKN Real Estate"
+    style="height: 90px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0; filter: brightness(0) invert(1);"
+  >
+  <div style="display: flex; flex-direction: column; line-height: 1.15;">
+    <span style="font-size: 1.25rem; font-weight: 700; color: #fff;">${SITE.name}</span>
+    <span style="font-size: 0.75rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em;">${SITE.tagline}</span>
+  </div>
+</div>
             <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.65; max-width: 280px; margin: 0;">
               Your trusted partner for buying, selling, and renting property across St. Kitts &amp; Nevis. Led by licensed agent ${SITE.agent}.
             </p>
