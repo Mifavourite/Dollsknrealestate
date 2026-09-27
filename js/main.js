@@ -100,16 +100,15 @@ function renderHeader() {
   return `
     <header class="site-header" id="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 14px; text-decoration: none;">
-  <!-- ===== LOGO — LARGE & VISIBLE ===== -->
+       <a href="index.html" class="logo">
   <img
     src="images/doll_skn_purple_logo.png"
     alt="Doll SKN Real Estate"
-    style="height: 220px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0;"
+    class="logo-img"
   >
   <div style="display: flex; flex-direction: column; line-height: 1.15;">
-    <span class="logo-main" style="font-size: 1.35rem; font-weight: 700;">${SITE.name}</span>
-    <span class="logo-sub" style="font-size: 0.8rem; opacity: 0.8;">${SITE.tagline}</span>
+    <span class="logo-main">${SITE.name}</span>
+    <span class="logo-sub">${SITE.tagline}</span>
   </div>
 </a>
         <nav class="nav-desktop">${navItems}</nav>
@@ -131,16 +130,16 @@ function renderFooter() {
           
           <!-- Brand column -->
           <div class="footer-brand">
-            <div class="logo" style="display: flex; align-items: center; gap: 14px; margin-bottom: 1.25rem;">
-  <!-- ===== LOGO — LARGE & VISIBLE ===== -->
+           <div class="logo">
   <img
     src="images/doll_skn_purple_logo.png"
     alt="Doll SKN Real Estate"
-    style="height: 180px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0; filter: brightness(0) invert(1);"
+    class="logo-img"
+    style="filter: brightness(0) invert(1);"
   >
   <div style="display: flex; flex-direction: column; line-height: 1.15;">
-    <span style="font-size: 1.25rem; font-weight: 700; color: #fff;">${SITE.name}</span>
-    <span style="font-size: 0.75rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.1em;">${SITE.tagline}</span>
+    <span class="logo-main" style="color: #fff;">${SITE.name}</span>
+    <span class="logo-sub" style="color: rgba(255,255,255,0.7);">${SITE.tagline}</span>
   </div>
 </div>
             <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.65; max-width: 280px; margin: 0;">
