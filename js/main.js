@@ -105,7 +105,7 @@ function renderHeader() {
   <img
     src="images/doll_skn_purple_logo.png"
     alt="Doll SKN Real Estate"
-    style="height: 110px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0;"
+    style="height: 220px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0;"
   >
   <div style="display: flex; flex-direction: column; line-height: 1.15;">
     <span class="logo-main" style="font-size: 1.35rem; font-weight: 700;">${SITE.name}</span>
@@ -136,7 +136,7 @@ function renderFooter() {
   <img
     src="images/doll_skn_purple_logo.png"
     alt="Doll SKN Real Estate"
-    style="height: 90px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0; filter: brightness(0) invert(1);"
+    style="height: 180px; width: auto; max-width: none; object-fit: contain; display: block; flex-shrink: 0; filter: brightness(0) invert(1);"
   >
   <div style="display: flex; flex-direction: column; line-height: 1.15;">
     <span style="font-size: 1.25rem; font-weight: 700; color: #fff;">${SITE.name}</span>
